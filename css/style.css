@@ -1,96 +1,277 @@
-body,
-ul,
-li,
-p {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     padding: 0;
-    list-style: none;
-    font-size: 1rem;
-    font-family: Verdana;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* menu*/
-
-a {
-    text-decoration: none;
-    color: white;
-
-}
-
-header {
-    background-color: black;
-    display: flex;
+footer {
+    text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
+    margin: 20px;
 }
-ul {
+
+/* SEÇÃO: header e nav */
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-ul a {
-    margin-left: 10px;
-    display: block;
-    padding: 10px;
+    padding-right: 1.45%;
+    padding-left: 1.45%;
 }
 
-h3 {
+#logo {
+    width: 200px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-family: Lato;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+    gap: 15%;
+}
+
+/* SEÇÃO: Banner e inicio */
+
+.banner {
+    background-image: url("../img/bandeira.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 50px;
 }
-img {
-    max-width: 100%;
+
+.banner span {
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+}
+
+.banner a {
+    text-decoration: none;
+    font-family: Lato;
+    padding: 2%;
+}
+
+#mensagem-boas-vindas {
+    color: rgb(255, 255, 255);
+    font-size: 71px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    font-family: Montserrat;
+    text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+
+#descricao {
+    font-family: Lato;
+    color: rgb(212, 44, 44);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+#botao-agendar {
+    color: white;
+    font-size: 25px;
+    border-radius: 55px;
+    background-color: #C8102E;
+}
+
+/* SEÇÃO: Sobre o professor */
+
+#img-selfie {
+    width: 379px;
     height: auto;
 }
 
-section {
+.sobre-conteudo {
+    scroll-margin-top: 100px;
     display: flex;
-    max-width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 120px 10px 120px;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
-section > article {
-    flex: 1 1 220px;
-    margin: 10px;
-    min-width: 275px;
-    max-width: 588px;
+.sobre-texto {
+    flex: 1;
+    max-width: 600px;
+}
+
+.sobre-texto h1 {
+    font-size: 51px;
+    font-family: Montserrat;
+    margin-bottom: 5px;
+    margin-top: -25px;
+}
+
+.sobre-texto h3 {
+    font-size: 19px;
+    font-family: Montserrat;
+    font-weight: 300px;
+    margin-top: 0px;
+}
+
+.sobre-texto p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    margin-right: 20%;
+}
+
+/* SEÇÃO: Método do curso*/
+
+#metodo-titulo {
+    color: #012169;
     text-align: center;
-    color:lightgray;
 }
-@media (max-width: 670px) {
+
+.metodo-container {
+    scroll-margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 10% 0% 10%;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.metodo-child:first-child {
+    flex: 1;
+    max-width: 600px;
+}
+
+.metodo-child p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 300px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.metodo-child img {
+    margin: auto;
+    text-align: center;
+}
+
+/* SEÇÃO: Matricula das aulas */
+
+.matricula-container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5%;
+}
+
+#matricula-secao {
+    color: #C8102E;
+    text-align: center;
+}
+
+/* Carrossel */
+
+.selecao-matricula {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.selecao-ativa,
+.selecao-matricula:hover {
+    background-color: #717171;
+}
+
+/* SEÇÃO: Mapa e agendamento */
+
+.mapa-agendamento {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #C8102E;
+    color: white;
+    justify-content: center;
+    width: 100%;
+}
+
+.mapa-agendamento a {
+    color: white;
+}
+
+.mapa-agendamento h2 {
+    color: white;
+}
+
+/* Imagens de anuncio */
+
+.curso-img {
+    width: 500px;
+    height: auto;
+}
+
+/* Celulares e etc */
+
+@media(max-width:768px) {
     header {
-        background-color: black;
-        flex-wrap:unset;
-        justify-content: space-between;
-        align-items: left;
-        height: 140px;
-        font-size: 30pt;
+        padding-left: 3%;
+        padding-right: 3%;
+
     }
 
-    ul {
-        display: block;
-        justify-content: flex-end;
+    .mapa-agendamento iframe {
+        width: 300px;
+        height: 350px;
     }
 
-    ul a {
-        margin-top: 2px;
- 
-        display: inline-block;
-        font-size: 10pt;
-        line-height: 1px;
-        
+    nav ul {
+        font-size: 12px;
+        flex-direction: column;
     }
-    section {
-        max-width: 90%;
+
+    nav li {
+        margin: 4px;
     }
-    section > article {
-        min-width: 290px;
+
+    #mensagem-boas-vindas {
+        font-size: 60px;
     }
-    section > article p {
-        font-size:larger;
+
+    #descricao {
+        font-size: 30px;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .curso-img {
+        width: 370px;
     }
 }

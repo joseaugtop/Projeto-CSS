@@ -1,57 +1,151 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/> 
-        <link rel="shortcut icon" type="x-icon" href="img/icon.png">
-        <link rel="stylesheet" href="./css/style.css">
-        <meta name="author" content="Jose Augusto Pereira da Rocha">
-        <meta name="robots" content="index, follow">
-        <meta name="description" content="Projeto academico sobre flexbox e media query que utiliza-os para criar layouts responsivos.">
-        <title>Flexbox</title>
-    </head>
-    <body>
-        <header>
-            <a href="/">Logo</a>
-            <nav>
-                <ul>
-                    <li><a href="/">Sobre</a></li>
-                    <li><a href="/">Produtos</a></li>
-                    <li><a href="/">Promoções</a></li>
-                    <li><a href="/">Notícias</a></li>
-                    <li><a href="/">Suporte</a></li>               
-                    <li><a href="/">Contato</a></li>
-                </ul>        
-            </nav>
-        </header>
-        
-        <h3>Section Flexbox</h3>
+<!DOCTYPE html>
+<html lang="PT-br">
 
-        <section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Jose Augusto Pereira da Rocha, Davi da Silva Valvassori, Artur Fabrício da Silva">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Aprenda inglês com o método direto de Teacher Ramon Casagrande. Aulas dinâmicas
+     e personalizadas para todas as idades e níveis de proficiência. Agende sua aula experimental e comece sua 
+     jornada no idioma!">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+    <link rel="shortcut icon" href="./img/icon.png">
+    <title>Método NEW | Teacher Ramon Casagrande</title>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#"><img src="./img/logo.png" id="logo" alt="Logo do professor Ramon"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#sobre-secao">SOBRE</a></li>
+                <li><a href="#metodo-titulo">MÉTODO</a></li>
+                <li><a href="https://www.instagram.com/teacherramoncasagrande/" target="_blank">
+                        <img src="./img/instagram_icon.png" alt="Ícone do Instagram" />
+                    </a>
+                </li>
+                <li><a href="https://api.whatsapp.com/send?phone=554891486611&text=Bom%20dia!%20Vi%20seu%20conteúdo%20no%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental."
+                        target="_blank">
+                        <img src="./img/whatsaap_icon.png" alt="Ícone do WhatsApp" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
             <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
+                <h1 id="mensagem-boas-vindas">Aulas particulares de Inglês</h1>
+                <h2 id="descricao"><span> Aulas online e presencial </span></h2>
+                <a id="botao-agendar"
+                    href="https://api.whatsapp.com/send?phone=554891486611&text=Bom%20dia!%20Vi%20seu%20conteúdo%20no%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental."
+                    target="_blank">
+                    Agende sua matrícula agora
+                </a>
             </article>
+        </section>
+
+        <article class="sobre-conteudo" id="sobre-secao">
+            <img src="img/professorselfie.png" class="centro" alt="Teacher Ramon" id="img-selfie">
+            <section class="sobre-texto" id="conteudo-sobre">
+                <h1>
+                    Hello Guys!<br>
+                    Eu sou o teacher Ramon Casagrande
+                </h1>
+                <h3>
+                    Professor de inglês com vasta experiência no ensino por metodo direto.
+                </h3>
+                <p>
+                    Casado e pai de dois filhos, Ramon tem uma vasta experiência com a língua inglesa e com o ensino de
+                    idiomas.
+                    São 12 anos de residência na Europa, incluindo 5 anos na Inglaterra.
+                    Após seu retorno ao Brasil, já são mais de 10 anos no ensino de Inglês.
+                </p>
+                <p>
+                    Através do método direto e sua dinâmica em sala, consegue envolver os estudantes e promover o
+                    raciocínio no
+                    novo idioma, mesmo para quem está iniciando do zero.
+                </p>
+                <p>
+                    Desde as crianças até os adultos, nosso Teacher consegue simplificar o aprendizado do Inglês com uma
+                    linguagem
+                    objetiva e divertida, gerando compreensão e fluência nos seus alunos! Sua abordagem flexível e
+                    personalizada se
+                    adapta a diferentes faixas etárias e níveis de proficiência, garantindo que todos os alunos
+                    progridam de maneira eficaz.
+                </p>
+            </section>
+        </article>
+        <h1 id="metodo-titulo">Qual o método das aulas?</h1>
+        <section class="metodo-container">
+            <aticle class="metodo-child">
+                <p>
+                    Sejam bem-vindos ao <b>Método NEW</b>, nossa sigla para Natural English Way, que em tradução
+                    livre
+                    é o
+                    <b>Caminho
+                        Natural para o Inglês</b>.
+                </p>
+                <p>
+                    Se baseando no Método Natural de aprendizado para novos idiomas,
+                    exploramos o poder da imersão no inglês e da prática constante em sala, recriando,
+                    de forma controlada e incentivadora, situações que mudam a chave de aprendizagem do nosso
+                    cérebro do
+                    nosso português para o INGLÊS,
+                    gerando habilidades linguísticas autênticas e duradouras.
+                </p>
+                <p>
+                    Prepare-se para, através do nosso método e ensino, se surpreender com sua própria capacidade
+                    de
+                    aprender
+                    inglês! 🌎📚🚀
+                </p>
+            </aticle>
+            <aticle class="metodo-child">
+                <img src="./img/metodo.png" alt="Sigla do método 'NEW', Natural English Way" class="curso-img">
+            </aticle>
+        </section>
+        <h2 id="matricula-secao">Matriculas abertas!</h2>
+        <section class="matricula-container">
             <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
+                <img id="carrossel" src="./img/matricula-ingles.png" class="curso-img" alt="">
+                <br>
+                <span class="selecao-matricula selecao-ativa" onclick="imgAtual(0)"></span>
+                <span class="selecao-matricula" onclick="imgAtual(1)"></span>
             </article>
-            <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
-            </article>
-            <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
-            </article>
-            <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
-            </article>
-            <article>
-                <img src="img/buggatti.jpg">
-                <p>Legenda</p>        
-            </article>  
-        </section>        
-    </body>
+        </section>
+
+        <section class="mapa-agendamento">
+            <h2>
+                Contato
+            </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.1086881570295!
+                    2d-49.296759124133!3d-28.71629767561905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+                    !3m3!1m2!1s0x95217fbef385d99f%3A0x165db0dce0a9ef7a!2sTeacher%20Ramon%20Casagrande
+                    %20%E2%94%82%20NEW!5e0!3m2!1spt-BR!2sbr!4v1731773093326!5m2!1spt-BR!2sbr" width="425" height="473"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>
+                R. Antônio Guglielmi, 234 - Ed. Viscaldi<br>
+                Jardim Elizabete, Içara - SC, 88820-000
+            </p>
+            <p>
+                Tel +55 (48) 99148 - 6611 | <a href="mailto:ramongrande27@gmail.com">ramongrande27@gmail.com</a>
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        © 2024, produzido por Ramon Casagrande
+    </footer>
+</body>
+
 </html>
